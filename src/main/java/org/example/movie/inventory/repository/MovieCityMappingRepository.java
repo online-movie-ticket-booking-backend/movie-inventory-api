@@ -12,10 +12,10 @@ import java.util.List;
 @Repository
 public interface MovieCityMappingRepository extends JpaRepository<MovieCityMapping, Integer> {
 
-  @Query(
-      "select mcm from MovieCityMapping mcm"
-          + " where UPPER(mcm.cityUniqueId)= UPPER(:cityId) "
-          + "and (mcm.movieStartDate<=:scheduleDate and mcm.movieEndDate>=:scheduleDate)")
-  List<MovieCityMapping> findMovieIdByCityAndScheduleDate(
-      @Param("cityId") String uniqueId, @Param("scheduleDate") Date scheduleDate);
+    @Query(
+            "select mcm from MovieCityMapping mcm"
+                    + " where UPPER(mcm.cityUniqueId)= UPPER(:cityId) "
+                    + "and (mcm.movieStartDate<=:scheduleDate and mcm.movieEndDate>=:scheduleDate)")
+    List<MovieCityMapping> findMovieIdByCityAndScheduleDate(
+            @Param("cityId") String uniqueId, @Param("scheduleDate") Date scheduleDate);
 }

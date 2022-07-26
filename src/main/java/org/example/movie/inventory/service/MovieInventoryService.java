@@ -33,7 +33,7 @@ public class MovieInventoryService {
                                         MovieDetailsResponse
                                                 .of()
                                                 .setMovieUniqueKey(movieCityMapping.getMovieUniqueId())
-                                                .setMovieCityIdMapping(movieCityMapping.getMcpId()+""))
+                                                .setMovieCityIdMapping(movieCityMapping.getMcpId() + ""))
                                 .collect(Collectors.toList()));
     }
 }

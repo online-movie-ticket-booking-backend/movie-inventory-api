@@ -84,7 +84,7 @@ public class KafkaProducerAdapter {
                 .getMovieDetailsMap();
         movieInventoryResponse
                 .getMovieDetailsResponseList()
-                .forEach(movieDetailsResponse ->{
+                .forEach(movieDetailsResponse -> {
                             MovieDetails movieDetails = movieMap.get(movieDetailsResponse.getMovieUniqueKey());
                             movieDetailsResponse.setMovieName(movieDetails.getMovieName());
                             movieDetailsResponse.setGenre(movieDetails.getGenre());

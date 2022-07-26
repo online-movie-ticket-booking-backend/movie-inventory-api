@@ -33,7 +33,7 @@ public class KafkaProduceConfiguration {
         return new DefaultKafkaProducerFactory<>(getConfigurationMap());
     }
 
-    private Map<String, Object> getConfigurationMap(){
+    private Map<String, Object> getConfigurationMap() {
         Map<String, Object> configProps = new HashMap<>();
         configProps.put(
                 ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,

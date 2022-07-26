@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class MovieInventoryAPIMainClass {
 
-  public static void main(String args[]) {
-    SpringApplication.run(MovieInventoryAPIMainClass.class);
-  }
+    public static void main(String args[]) {
+        SpringApplication.run(MovieInventoryAPIMainClass.class);
+    }
 }
