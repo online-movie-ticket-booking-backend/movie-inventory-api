@@ -13,7 +13,7 @@ import java.sql.Date;
 
 @Data
 @Entity
-@Table(name = "movie_city_mapping", schema = "movie_booking")
+@Table(name = "movie_city_mapping", schema = "movie_inventory")
 public class MovieCityMapping {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Id
